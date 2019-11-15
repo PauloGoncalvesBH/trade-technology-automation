@@ -1,11 +1,27 @@
 {
   "name": "trade-technology-automation",
-  "version": "1.0.0",
-  "description": "Automação para cargo de QA na Trade Technology",
-  "main": "index.js",
-  "scripts": {
-    "test": "protractor"
-  },
   "author": "Paulo Gonçalves <paulorochag@hotmail.com>",
-  "license": "MIT"
+  "description": "Automação para cargo de QA na Trade Technology",
+  "license": "MIT",
+  "scripts": {
+    "pretest": "webdriver-manager update --gecko false",
+    "test": "exit",
+    "prettify": "prettier --write **/*.js **/*.json --print-width 120 --single-quote true --loglevel warn"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettify",
+      "pre-push": "npm test"
+    }
+  },
+  "dependencies": {
+    "faker": "^4.1.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor": "5.4.2",
+    "protractor-helper": "4.0.5"
+  },
+  "devDependencies": {
+    "husky": "^3.0.9",
+    "prettier": "^1.19.1"
+  }
 }
