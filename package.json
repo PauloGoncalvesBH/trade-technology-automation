@@ -10,9 +10,15 @@
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "npm run prettify",
       "pre-push": "npm test"
     }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "dependencies": {
     "faker": "^4.1.0",
@@ -21,6 +27,8 @@
     "protractor-helper": "4.0.5"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
     "husky": "^3.0.9",
     "prettier": "^1.19.1"
   }
