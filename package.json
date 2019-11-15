@@ -1,0 +1,11 @@
+{
+  "name": "trade-technology-automation",
+  "version": "1.0.0",
+  "description": "Automação para cargo de QA na Trade Technology",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor"
+  },
+  "author": "Paulo Gonçalves <paulorochag@hotmail.com>",
+  "license": "MIT"
+}
