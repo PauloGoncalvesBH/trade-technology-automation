@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "pretest": "webdriver-manager update --gecko false",
-    "test": "exit",
+    "test": "protractor",
     "prettify": "prettier --write **/*.js **/*.json --print-width 120 --single-quote true --loglevel warn"
   },
   "husky": {

@@ -34,10 +34,16 @@ npm test
 
 ## Sobre o projeto
 
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![dependency update info](https://david-dm.org/PauloGoncalvesBH/trade-technology-automation.svg)](https://david-dm.org)
+### Casos de teste
+
+**1.** Adiciona todos os produtos 'Best Sellers', realiza todo o fluxo de compra e exporta informações dos produtos em json [nesse diretório](/json).
+
+**2.** Adiciona todos os produtos 'Popular' e realiza todo o fluxo de compra. Esse não será executado por questão de tempo de execução e ser quase igual ao anterior.
+
 
 ### Padronização
+
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 * Toda mensagem de commit é verificada se está de acordo com a convenção de boa prática de commit. _Para saber mais, [clique aqui](https://github.com/conventional-changelog/commitlint#what-is-commitlint) e [aqui](https://commitlint.js.org/#/concepts-commit-conventions)._
 * Antes de cada `git commit` o [prettier](https://github.com/prettier/prettier) entra em ação garantindo que todos os arquivos `js` e `json` estão em um estilo consistente.
