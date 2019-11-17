@@ -4,7 +4,7 @@ const helper = require('protractor-helper');
 const carrinho = require('../page_objects/carrinho');
 const homepage = require('../page_objects/homepage.po.js');
 
-describe('Realizar compra completa', () => {
+describe('Realizar fluxo completo', () => {
   //Arrange
   beforeEach(() => homepage.acessar());
 
